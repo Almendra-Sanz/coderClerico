@@ -70,7 +70,7 @@ h2 {
 h3 {
     font-family: var(--font-one);
     color: var(--titlec);
-    font-size: 2em;
+    font-size: 3em;
 }
 
 /* HELPERS */
@@ -91,10 +91,20 @@ h3 {
 
 /* HEADER MENU*/
 
+#navegar {
+    background-image: linear-gradient(to bottom,#B3C5DD,#f5c2d1);
+    margin-bottom: 5rem;
+
+}
+
 header .logo {
     flex-basis: 30%;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: auto;
+}
+
+nav .pict {
+    transform: translate(0,10px);
 }
 
 li .menu__logo {
@@ -107,9 +117,6 @@ header .menu {
     justify-content: space-between;
 }
 
-nav {
-    background-color: var(--secondary);
-}
 
 .bar {
     display: flex;
@@ -169,15 +176,19 @@ h1 {
     color: #789EC3;
     font-size: 3em;
     margin: auto;
-
 }
+
 
 /* FOOTER */
 
+#navego {
+    background-image: linear-gradient(to top,#B3C5DD,#f5c2d1);
+}
+
 footer {
-    background-color: var(--secondary);
     margin-top: 2em;
 }
+
 
 .fot {
     display: flex;
@@ -243,13 +254,25 @@ div .gatito {
     justify-content: center;
 }
 
+#pod {
+    grid-area: pod;
+    display: flex;
+    transform: rotate(270deg);
+    justify-content: center;
+    align-items: center;
+    animation-name: happy-pod;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
 .pic {
     grid-area: pic;
     display: flex;
     align-content: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-top: 2rem;
 }
-
 /* TRABAJOS */
 .galeria {
     display: grid;
@@ -262,6 +285,7 @@ div .gatito {
 .works {
     background-color: beige;
     padding: auto;
+
 }
 
 /* CONTACTO */
@@ -348,8 +372,8 @@ div .gatito {
 
     header .logo {
         flex-basis: 30%;
-        max-width: 100px;
-        max-height: 100px;
+        max-width: 50px;
+        max-height: 50px;
     }
 
     .general-se {
@@ -393,4 +417,29 @@ div .gatito {
         font-family: var(--font-one);
         color: var(--linkcol);
     }
+
 }
+
+
+
+footer {
+    animation-duration: 5s;
+    animation-name: hello;
+    animation-iteration-count: initial;
+ }
+ 
+ 
+ @keyframes hello {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+ @keyframes happy-pod {
+  0% {font-size: 100%;}
+  50% { font-size: 25px;}
+  100% { font-size: 100%;}
+ }
