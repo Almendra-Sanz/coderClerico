@@ -1,0 +1,396 @@
+/* NORMALIZE */
+*::after *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'dillan';
+    src: url('../multimedia/tip/MADE\ Dillan\ PERSONAL\ USE.otf.otf')
+}
+
+/* VARIABLES */
+:root {
+    --principal: #F5C2D1;
+    --secondary: #B3C5DD;
+    --linkcol: #193B5B;
+    --titlec: #789EC3;
+    --font-one: 'dillan';
+    --font-two: 'PT Sans', sans-serif;
+
+}
+
+/* GLOBALS*/
+header {
+    padding: 0%;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: var(--principal);
+}
+
+a {
+    text-decoration: none;
+    color: var(--linkcol);
+    font-family: var(--font-two);
+    transition: all .3s ease-in-out;
+}
+
+p {
+    font-family: var(--font-two);
+    color: var(--linkcol);
+}
+
+a:hover {
+    color: var(--titlec);
+}
+
+
+ul {
+    list-style: none;
+
+}
+
+h2 {
+    font-family: var(--font-one);
+    color: var(--titlec);
+    font-size: 2em;
+}
+
+h3 {
+    font-family: var(--font-one);
+    color: var(--titlec);
+    font-size: 2em;
+}
+
+/* HELPERS */
+
+.flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-colum {
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER MENU*/
+
+header .logo {
+    flex-basis: 30%;
+    width: 200px;
+    height: 200px;
+}
+
+li .menu__logo {
+    width: 100%;
+    height: 100%;
+}
+
+header .menu {
+    flex-basis: 40%;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: var(--secondary);
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+    padding: 0 2em;
+}
+
+nav ul .menu {
+    font-family: var(--font-two);
+}
+
+.menu .menu__item .menu__link:hover {
+    color: var(--titlec);
+
+}
+
+.menu .menu__item .menu__link {
+    transition: all .3s ease-in-out;
+}
+
+.menu__item .sub-menu {
+    display: none;
+    position: absolute;
+    color: var(--linkcol);
+    transition: all .3s ease-in-out;
+}
+
+.menu .menu__item:hover .sub-menu {
+    display: block;
+    font-family: var(--font-two);
+
+}
+
+.menu__item .sub-menu .sub-menu__link:hover {
+    color: var(--titlec);
+}
+
+/* Me gustaria que el sub-menu quede justo abajo de la palabra secciones y no con margen izquierdo, pero no lo estaria logrando */
+
+/* MAIN SECTION */
+
+.present {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin-left: 8%;
+    margin-right: 5%;
+
+}
+
+
+h1 {
+    font-family: var(--font-one);
+    color: #789EC3;
+    font-size: 3em;
+    margin: auto;
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--secondary);
+    margin-top: 2em;
+}
+
+.fot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fot-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.red-list__item {
+    margin-right: 2em;
+    justify-content: left;
+}
+
+.fot-contact__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* no entiendo porque no funciona, por eso lo solucione con un margin pero no es lo mismo  */
+    margin-right: 35%;
+}
+
+.contact-list__item {
+    margin-right: 1em;
+}
+
+/* SECCIONES*/
+div .gatito {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    margin-right: 20%;
+}
+
+.gat {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: "gato""pod""pic";
+}
+
+.gatito h2 {
+    grid-area: gato;
+    display: flex;
+    justify-content: center;
+}
+
+.gatito p {
+    grid-area: gato;
+    display: flex;
+    justify-content: center;
+}
+
+.pod {
+    grid-area: pod;
+    display: flex;
+    justify-content: center;
+}
+
+.pic {
+    grid-area: pic;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-evenly;
+}
+
+/* TRABAJOS */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.works {
+    background-color: beige;
+    padding: auto;
+}
+
+/* CONTACTO */
+#contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.te {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.con {
+    align-items: self-end;
+    margin-right: 3em;
+    color: var(--linkcol);
+}
+
+.me {
+    margin-left: 3em;
+    align-items: self-start;
+    color: var(--linkcol);
+}
+
+.form {
+    font-family: var(--font-two);
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px) {
+    header {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0 0;
+    }
+
+    p {
+        font-size: 12, 5px;
+    }
+
+    nav ul .menu {
+        justify-content: space-between;
+    }
+
+
+    .present {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        padding: 2em 0;
+    }
+
+    .fot {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fot-contact__list {
+        margin-right: 0%;
+    }
+
+    header .logo {
+        flex-basis: 30%;
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .general-se {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pic {
+        grid-area: pic;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic .di {
+        margin-top: 1em;
+    }
+
+}
+
+@media screen and (max-width: 512px) {
+    #contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .te {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    con {
+        margin-right: 0;
+        color: var(--linkcol);
+    }
+
+    .me {
+        margin-left: 0;
+        font-family: var(--font-one);
+        color: var(--linkcol);
+    }
+}
