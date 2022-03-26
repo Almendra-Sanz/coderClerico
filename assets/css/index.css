@@ -92,7 +92,7 @@ h3 {
 /* HEADER MENU*/
 
 #navegar {
-    background-image: linear-gradient(to bottom,#B3C5DD,#f5c2d1);
+    background-image: linear-gradient(to bottom, #B3C5DD, #f5c2d1);
     margin-bottom: 5rem;
 
 }
@@ -104,7 +104,7 @@ header .logo {
 }
 
 nav .pict {
-    transform: translate(0,10px);
+    transform: translate(0, 10px);
 }
 
 li .menu__logo {
@@ -182,7 +182,7 @@ h1 {
 /* FOOTER */
 
 #navego {
-    background-image: linear-gradient(to top,#B3C5DD,#f5c2d1);
+    background-color: #e9ecef;
 }
 
 footer {
@@ -273,19 +273,10 @@ div .gatito {
     justify-content: center;
     margin-top: 2rem;
 }
-/* TRABAJOS */
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
 
-.works {
-    background-color: beige;
-    padding: auto;
-
+.general-se {
+    align-items: center;
+    margin-left: 7%;
 }
 
 /* CONTACTO */
@@ -426,20 +417,62 @@ footer {
     animation-duration: 5s;
     animation-name: hello;
     animation-iteration-count: initial;
- }
- 
- 
- @keyframes hello {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
- }
+}
 
- @keyframes happy-pod {
-  0% {font-size: 100%;}
-  50% { font-size: 25px;}
-  100% { font-size: 100%;}
- }
+
+@keyframes hello {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes happy-pod {
+    0% {
+        font-size: 100%;
+    }
+
+    50% {
+        font-size: 25px;
+    }
+
+    100% {
+        font-size: 100%;
+    }
+}
+
+/* cambios bustrap */
+
+.container-fluid {
+    margin-left: 4rem;
+}
+
+section {
+    margin-top: 4rem;
+}
+
+.container-fluid {
+    margin-left: 4rem;
+}
+
+div .gal {
+    align-items: center;
+    justify-content: space-between;
+}
+
+div .it {
+    margin-top: 2rem;
+}
+
+div .card img {
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--titlec)
+}

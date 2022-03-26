@@ -2,77 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/multimedia/clerico.jpg">
-    <title>Clericó</title>
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=PT+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/multimedia/clerico.jpg">
+  <title>Clericó</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=PT+Sans&display=swap" rel="stylesheet">
 
 
 </head>
 
 <body>
-    <header>
-        <nav id="navegar">
-            <ul class="menu bar container">
-                <li class="menu__item"><a href="./index.html" class="menu__link">Clericó</a></li>
-                <li class="menu__item"><a href="./assets/views/secciones.html" class="menu__link">Secciones</a>
-                    <ul class="sub-menu">
-                        <li class="sub-menu__item"><a href="./assets/views/seccion-uno.html" class="sub-menu__link">La
-                                curiosidad mato al gato</a></li>
-                        <li class="sub-menu__item" class="sub-menu__item"><a href="" class="sub-menu__link">Color en el
-                                cine</a></li>
-                        <li class="sub-menu__item" class="sub-menu__item"><a href="" class="sub-menu__link">Datos
-                                random</a></li>
-                    </ul>
-                </li>
-                <li class="menu__logo"><a href="./index.html">
-                    <nav class="pict"><picture><img src="./assets/multimedia/png.png" alt="logo" class="logo"></picture></nav> 
-                </a></li>
-                <li class="menu__item"><a href="./assets/views/trabajos.html" class="menu__link">Trabajos</a></li>
-                <li class="menu__item"><a href="./assets/views/contacto.html" class="menu__link">Contacto</a></li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <picture><img src="./assets/multimedia/png.png" alt="Logo de la pagina" width="30" height="auto"></picture>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Clericó</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./assets/views/trabajos.html">Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./assets/views/">Contaco</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Secciones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./assets/views/secciones.html">Secciones</a></li>
+              <li><a class="dropdown-item" href="./assets/views/seccion-uno.html">La curiosidad salvo al gato</a></li>
+              <li><a class="dropdown-item" href="#">Random</a></li>
             </ul>
-        </nav>
-    </header>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <main class="container main">
-        <section class="present">
-            <div class="foo">
-                <h1>Clericó</h1>
-                <p class="foo parraf">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis nemo
-                    inventore,<br>
-                    dolores quidem sapiente provident aliquam officia pariatur, cum at maxime dignissimosbr <br>
-                    aspernatur cupiditate quos laboriosam veniam ipsum. Harum, officiis?Lorem, ipsum dolor <br>
-                    sit amet consectetur adipisicing elit. Corporis nemo inventore,<br>
-                    dolores quidem sapiente provident aliquam officia pariatur, cum at maxime dignissimosbr <br>
-                    aspernatur cupiditate quos laboriosam veniam ipsum. Harum, officiis?</p>
-            </div>
-            <video src="./assets/multimedia/ama la comida.mp4" controls width="400" height="300" class="foo"></video>
-        </section>
-    </main>
+  <main class="container main">
+    <section class="present">
+      <div class="foo">
+        <h1>Clericó</h1>
+        <p class="foo parraf">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis nemo
+          inventore,<br>
+          dolores quidem sapiente provident aliquam officia pariatur, cum at maxime dignissimosbr <br>
+          aspernatur cupiditate quos laboriosam veniam ipsum. Harum, officiis?Lorem, ipsum dolor <br>
+          sit amet consectetur adipisicing elit. Corporis nemo inventore,<br>
+          dolores quidem sapiente provident aliquam officia pariatur, cum at maxime dignissimosbr <br>
+          aspernatur cupiditate quos laboriosam veniam ipsum. Harum, officiis?</p>
+      </div>
+      <video src="./assets/multimedia/ama la comida.mp4" controls width="400" height="300" class="foo"></video>
+    </section>
+  </main>
 
 
-    <footer>
-        <div id="navego" class="fot">
-            <ul class="fot-list">
-                <li class="red-list__item"><a href="https://www.instagram.com/estudio.clerico/"
-                        class="red-list__link">Instagram</a></li>
-                <li class="red-list__item"><a href="https://www.behance.net/clerico" class="red-list__link">Behance</a>
-                </li>
-            </ul>
-            <ul class="fot-contact__list">
-                <li class="contact-list__item"><img src="./assets/multimedia/png.png" alt="logo" width="30"
-                        height="auto" class="contact-list__link" id="imagen"></li>
-                <li class="contact-list__item"><a href="./assets/views/contacto.html"
-                        class="contact-list__link c">Contactar mis servicios</a></li>
-            </ul>
-        </div>
-    </footer>
+  <footer>
+    <div id="navego" class="fot">
+      <ul class="fot-list">
+        <li class="red-list__item"><a href="https://www.instagram.com/estudio.clerico/"
+            class="red-list__link">Instagram</a></li>
+        <li class="red-list__item"><a href="https://www.behance.net/clerico" class="red-list__link">Behance</a>
+        </li>
+      </ul>
+      <ul class="fot-contact__list">
+        <li class="contact-list__item"><img src="./assets/multimedia/png.png" alt="logo" width="30" height="auto"
+            class="contact-list__link" id="imagen"></li>
+        <li class="contact-list__item"><a href="./assets/views/contacto.html" class="contact-list__link c">Contactar mis
+            servicios</a></li>
+      </ul>
+    </div>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
