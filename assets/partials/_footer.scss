@@ -1,0 +1,46 @@
+#navego {
+    background-image: linear-gradient(to top,#B3C5DD,#f5c2d1);
+}
+
+footer {
+    margin-top: 2em;
+
+    & {
+        animation-duration: 5s;
+        animation-name: hello;
+        animation-iteration-count: initial;
+     }
+     
+}
+
+
+.fot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fot-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.red-list__item {
+    margin-right: 2em;
+    justify-content: left;
+}
+
+.fot-contact__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* no entiendo porque no funciona, por eso lo solucione con un margin pero no es lo mismo  */
+    margin-right: 35%;
+}
+
+.contact-list__item {
+    margin-right: 1em;
+}

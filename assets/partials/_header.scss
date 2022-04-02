@@ -1,0 +1,49 @@
+#navegar {
+    background-image: linear-gradient(to bottom,#B3C5DD,#f5c2d1);
+    margin-bottom: 5rem;
+
+}
+
+header {
+    
+    .logo {
+        flex-basis: 30%;
+        width: 100px;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .bar { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2rem;
+        padding: 0 2rem;
+
+    }
+
+    .menu {
+        flex-basis: 40%;
+        justify-content: space-between;
+
+     .menu__item .menu__link {
+            transition: all .3s ease-in-out;
+     }
+        
+     .menu__item .menu__link:hover {
+            color: $titlec;
+        }
+     .menu__item:hover .sub-menu {
+            display: block;
+            font-family:$font-two;
+        }
+
+     .menu__item .sub-menu {
+        display: none;
+        position: absolute;
+        color: $linkcol;
+        transition: all .3s ease-in-out;
+    }
+    
+    }
+}

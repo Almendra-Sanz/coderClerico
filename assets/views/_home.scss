@@ -1,0 +1,17 @@
+
+.present {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin-left: 8%;
+    margin-right: 5%;
+
+}
+
+
+h1 {
+    font-family: $font-one;
+    color: #789EC3;
+    font-size: 3em;
+    margin: auto;
+}

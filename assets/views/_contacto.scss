@@ -1,0 +1,27 @@
+#contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.te {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.con {
+    align-items: self-end;
+    margin-right: 3em;
+    color: $linkcol;
+}
+
+.me {
+    margin-left: 3em;
+    align-items: self-start;
+    color: $linkcol;
+}
+
+.form {
+    font-family:$font-two;
+}

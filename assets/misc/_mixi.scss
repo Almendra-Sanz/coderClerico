@@ -1,0 +1,118 @@
+// HELPERS 
+
+.flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-colum {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px) {
+    header {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0 0;
+    }
+
+    p {
+        font-size: 12, 5px;
+    }
+
+    nav ul .menu {
+        justify-content: space-between;
+    }
+
+
+    .present {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        padding: 2em 0;
+    }
+
+    .fot {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fot-contact__list {
+        margin-right: 0%;
+    }
+
+    header .logo {
+        flex-basis: 30%;
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .general-se {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pic {
+        grid-area: pic;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic .di {
+        margin-top: 1em;
+    }
+
+}
+
+@media screen and (max-width: 512px) {
+    #contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .te {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    con {
+        margin-right: 0;
+        color: $linkcol;
+    }
+
+    .me {
+        margin-left: 0;
+        font-family: $font-one;
+        color: $linkcol;
+    }
+
+}

@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'dillan';
+    src: url('../multimedia/tip/MADE\ Dillan\ PERSONAL\ USE.otf.otf')
+  }
+//   MISC
+  @import url('../multimedia/tip/MADE\ Dillan\ PERSONAL\ USE.otf.otf');
+  @import '../misc/variables';
+  @import '../misc/normalize'; 
+  @import '../misc/mixi';
+  @import '../misc/animation';
+  
+
+//  PARTIALS
+@import '../partials/header'; 
+@import '../partials/footer';
+
+// VIEWS
+  @import '../views/home'; 
+  @import '../views/contacto';
+  @import '../views/secciones';
+  @import '../views/seccion-uno';
+  @import '../views/trabajos';

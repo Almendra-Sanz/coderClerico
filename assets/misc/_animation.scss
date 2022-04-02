@@ -1,0 +1,14 @@
+@keyframes hello {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+ @keyframes happy-pod {
+  0% {font-size: 100%;}
+  50% { font-size: 25px;}
+  100% { font-size: 100%;}
+ }

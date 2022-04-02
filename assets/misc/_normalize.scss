@@ -1,0 +1,57 @@
+/* NORMALIZE */
+*::after *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBALS*/
+header {
+    padding: 0%;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: $principal;
+}
+
+a {
+    text-decoration: none;
+    color: $linkcol;
+    font-family:$font-two;
+    transition: all .3s ease-in-out;
+}
+
+p {
+    font-family:$font-two;
+    color: $linkcol;
+}
+
+a:hover {
+    color: $titlec;
+}
+
+
+ul {
+    list-style: none;
+
+}
+
+h2 {
+    font-family: $font-one;
+    color: $titlec;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: $font-one;
+    color: $titlec;
+    font-size: 3em;
+}
