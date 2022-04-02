@@ -1,9 +1,8 @@
-#navego {
-    background-image: linear-gradient(to top,#B3C5DD,#f5c2d1);
-}
+
 
 footer {
     margin-top: 2em;
+    font-size: 0,5em;
 
     & {
         animation-duration: 5s;
@@ -25,6 +24,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left:5% ;
 }
 
 .red-list__item {
@@ -35,12 +35,27 @@ footer {
 .fot-contact__list {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:center;
     justify-content: center;
+    padding-right:5% ;
     /* no entiendo porque no funciona, por eso lo solucione con un margin pero no es lo mismo  */
-    margin-right: 35%;
 }
 
 .contact-list__item {
     margin-right: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 2em 0;
+    }
+
+    .fot {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fot-contact__list {
+        margin-right: 0%;
+    }
 }

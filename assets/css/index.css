@@ -22,33 +22,42 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  background-color: #F5C2D1; }
+  background-color: #e9c2ce; }
 
 a {
   text-decoration: none;
-  color: #193B5B;
+  color: white;
   font-family: "PT Sans", sans-serif;
   transition: all .3s ease-in-out; }
 
 p {
-  font-family: "PT Sans", sans-serif;
-  color: #193B5B; }
+  color: white;
+  font-size: 1em;
+  font-family: "PT Sans", sans-serif; }
 
 a:hover {
-  color: #789EC3; }
+  color: #bd768b; }
 
 ul {
   list-style: none; }
 
 h2 {
   font-family: "dillan";
-  color: #789EC3;
+  color: #789FC3;
   font-size: 2em; }
 
 h3 {
   font-family: "dillan";
-  color: #789EC3;
-  font-size: 3em; }
+  font-size: 3em;
+  color: #789FC3; }
+
+@media screen and (max-width: 992px) {
+  p {
+    font-size: 14px; } }
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 12, 5px; } }
 
 .flex {
   display: flex; }
@@ -66,63 +75,11 @@ h3 {
   header {
     font-size: 14px; }
   p {
-    font-size: 14px; }
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px; } }
+    font-size: 14px; } }
 
 @media screen and (max-width: 768px) {
-  header {
-    padding: 0 0; }
   p {
-    font-size: 12, 5px; }
-  nav ul .menu {
-    justify-content: space-between; }
-  .present {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  footer {
-    padding: 2em 0; }
-  .fot {
-    display: flex;
-    flex-direction: row; }
-  .fot-contact__list {
-    margin-right: 0%; }
-  header .logo {
-    flex-basis: 30%;
-    max-width: 50px;
-    max-height: 50px; }
-  .general-se {
-    display: flex;
-    flex-direction: column; }
-  .pic {
-    grid-area: pic;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .pic .di {
-    margin-top: 1em; } }
-
-@media screen and (max-width: 512px) {
-  #contacto {
-    display: grid;
-    grid-template-columns: 1fr; }
-  .te {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  con {
-    margin-right: 0;
-    color: #193B5B; }
-  .me {
-    margin-left: 0;
-    font-family: "dillan";
-    color: #193B5B; } }
+    font-size: 12, 5px; } }
 
 @keyframes hello {
   0% {
@@ -139,21 +96,28 @@ h3 {
     font-size: 100%; } }
 
 #navegar {
-  background-image: linear-gradient(to bottom, #B3C5DD, #f5c2d1);
-  margin-bottom: 5rem; }
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row; }
 
 header .logo {
   flex-basis: 30%;
-  width: 100px;
+  width: 300px;
   height: auto;
-  margin-top: 1rem; }
+  padding-left: 5%; }
+  header .logo {
+    animation-duration: 5s;
+    animation-name: hello;
+    animation-iteration-count: initial; }
 
 header .bar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 2rem;
-  padding: 0 2rem; }
+  margin-bottom: 7rem;
+  justify-content: center;
+  margin: 0;
+  padding-left: 30%; }
 
 header .menu {
   flex-basis: 40%;
@@ -161,21 +125,33 @@ header .menu {
   header .menu .menu__item .menu__link {
     transition: all .3s ease-in-out; }
   header .menu .menu__item .menu__link:hover {
-    color: #789EC3; }
+    color: #bd768b; }
   header .menu .menu__item:hover .sub-menu {
     display: block;
     font-family: "PT Sans", sans-serif; }
   header .menu .menu__item .sub-menu {
     display: none;
     position: absolute;
-    color: #193B5B;
+    color: #bd768b;
     transition: all .3s ease-in-out; }
 
-#navego {
-  background-image: linear-gradient(to top, #B3C5DD, #f5c2d1); }
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 0; }
+  nav ul .menu {
+    justify-content: space-between; }
+  header .logo {
+    flex-basis: 30%;
+    max-width: 150px;
+    max-height: auto; } }
+
+@media screen and (max-width: 992px) {
+  header {
+    font-size: 12px; } }
 
 footer {
-  margin-top: 2em; }
+  margin-top: 2em;
+  font-size: 0,5em; }
   footer {
     animation-duration: 5s;
     animation-name: hello;
@@ -190,7 +166,8 @@ footer {
 .fot-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-left: 5%; }
 
 .red-list__item {
   margin-right: 2em;
@@ -201,24 +178,42 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* no entiendo porque no funciona, por eso lo solucione con un margin pero no es lo mismo  */
-  margin-right: 35%; }
+  padding-right: 5%;
+  /* no entiendo porque no funciona, por eso lo solucione con un margin pero no es lo mismo  */ }
 
 .contact-list__item {
   margin-right: 1em; }
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 2em 0; }
+  .fot {
+    display: flex;
+    flex-direction: row; }
+  .fot-contact__list {
+    margin-right: 0%; } }
 
 .present {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
-  margin-left: 8%;
-  margin-right: 5%; }
+  margin-left: 5%;
+  margin-top: 6%; }
+
+div .video {
+  margin: auto; }
 
 h1 {
   font-family: "dillan";
   color: #789EC3;
   font-size: 3em;
   margin: auto; }
+
+@media screen and (max-width: 768px) {
+  .present {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 #contacto {
   display: grid;
@@ -233,15 +228,37 @@ h1 {
 .con {
   align-items: self-end;
   margin-right: 3em;
-  color: #193B5B; }
+  color: white; }
 
 .me {
   margin-left: 3em;
   align-items: self-start;
-  color: #193B5B; }
+  color: white; }
 
 .form {
   font-family: "PT Sans", sans-serif; }
+
+@media screen and (max-width: 512px) {
+  #contacto {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .te {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  con {
+    margin-right: 0;
+    color: white; }
+  .me {
+    margin-left: 0;
+    font-family: "dillan";
+    color: white; } }
+
+@media screen and (max-width: 768px) {
+  .general-se {
+    display: flex;
+    flex-direction: column; } }
 
 #pod {
   grid-area: pod;
@@ -274,7 +291,28 @@ h1 {
 .gatito p {
   grid-area: gato;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 1em;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .pic .di {
+    margin-top: 1em; }
+  .pic {
+    grid-area: pic;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #pod {
+    grid-area: pod;
+    display: flex;
+    transform: rotate(270deg);
+    justify-content: center;
+    align-items: center;
+    animation-name: happy-pod;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 2s; } }
 
 .galeria {
   display: grid;
@@ -286,3 +324,11 @@ h1 {
 .works {
   background-color: beige;
   padding: auto; }
+
+@media screen and (max-width: 992px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; } }

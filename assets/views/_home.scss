@@ -3,15 +3,27 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
-    margin-left: 8%;
-    margin-right: 5%;
-
+    margin-left: 5%;
+    margin-top: 6%;
 }
 
+div .video {
+    margin: auto;
+}
 
 h1 {
     font-family: $font-one;
     color: #789EC3;
     font-size: 3em;
     margin: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+ .present {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

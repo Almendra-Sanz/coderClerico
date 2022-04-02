@@ -25,3 +25,29 @@
 .form {
     font-family:$font-two;
 }
+
+@media screen and (max-width: 512px) {
+    #contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .te {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    con {
+        margin-right: 0;
+        color: $linkcol;
+    }
+
+    .me {
+        margin-left: 0;
+        font-family: $font-one;
+        color: $linkcol;
+    }
+
+}

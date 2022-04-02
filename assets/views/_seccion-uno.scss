@@ -36,5 +36,33 @@
     grid-area: gato;
     display: flex;
     justify-content: center;
+    font-size: 1em;
+    text-align: center;
 }
+}
+
+
+@media screen and (max-width: 768px) {
+.pic .di {
+    margin-top: 1em;
+}
+.pic {
+    grid-area: pic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pod {
+    grid-area: pod;
+    display: flex;
+    transform: rotate(270deg);
+    justify-content: center;
+    align-items: center;
+    animation-name: happy-pod;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
 }
