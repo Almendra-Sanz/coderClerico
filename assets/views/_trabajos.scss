@@ -2,22 +2,71 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 20px;
     grid-row-gap: 20px;
+    justify-content: space-between;
+    
+    .job {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+
+          img {
+              @include image-box 
+        }
+
+        p {
+            align-items: center;     
+      }
+    
+      $image: (
+          1: '1',
+          2:'2',
+          3:'3',
+          4: '4',
+          5: '5',
+          6: '6'
+      );
+
+      @each $image, $value in $image {
+          .img-#{$image} {  height: 300px;
+            width: 300px;
+            border-radius: 10px;
+            background-size: cover;
+            background-image: url('../multimedia/#{$value}.png');
+
+          }
+           
+      }
+
+
+    }
 }
 
-.works {
-    background-color: beige;
-    padding: auto;
+    
 
-}
+        
+    
 
 @media screen and (max-width: 992px) {
     .galeria {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 20px;
         grid-row-gap: 20px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 20px;
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
     }
 }

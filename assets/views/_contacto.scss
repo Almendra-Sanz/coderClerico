@@ -3,27 +3,81 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.te {
+ 
+.con {
+    padding-right: 3em;
+    color: $linkcol;
+    padding-left: 50%;
+}
+
+.me {
+    padding-left: 3em;
+    padding-right: 50%;
+     color: $linkcol;
+    
+}
+
+.form {
+    font-family:map-get($tipos, paragrap);
+    
+
+}
+
+.te { 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    textarea{
+        border-radius: 15px;
+        padding-left: 1rem;
+        border-style:none;
+        color: gray;
+        font-family: map-get($tipos,paragrap );
 }
 
-.con {
-    align-items: self-end;
-    margin-right: 3em;
-    color: $linkcol;
 }
 
-.me {
-    margin-left: 3em;
-    align-items: self-start;
-    color: $linkcol;
+div .caja {
+    border-radius: 5px;
+    border-style:none;
+    padding-left: 1rem;
+    color: gray;
+    font-family: map-get($tipos,paragrap );
+
 }
 
-.form {
-    font-family:$font-two;
+select {
+    border-style: none ;
+    color: gray;
+}
+ 
+button {
+    border-style: none;
+    background-color: $secondary;
+    color: white;
+    font-family: map-get($tipos,paragrap );
+    border-radius: 2px;
+
+}
+
+@media screen and (max-width: 768px){
+
+    .con {
+        padding-right: 3em;
+        color: $linkcol;
+        padding-left: 3%;
+        align-items: center;
+    }
+    
+    .me {
+        padding-left: 3em;
+        padding-right: 3%;
+         color: $linkcol;
+         align-items: center;
+        
+    }
 }
 
 @media screen and (max-width: 512px) {
@@ -46,8 +100,9 @@
 
     .me {
         margin-left: 0;
-        font-family: $font-one;
+        font-family: map-get($tipos, paragrap );
         color: $linkcol;
     }
 
 }
+

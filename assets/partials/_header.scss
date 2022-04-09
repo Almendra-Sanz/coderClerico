@@ -44,7 +44,7 @@ header {
         }
      .menu__item:hover .sub-menu {
             display: block;
-            font-family:$font-two;
+            font-family:map-get($tipos, paragrap);
         }
 
      .menu__item .sub-menu {

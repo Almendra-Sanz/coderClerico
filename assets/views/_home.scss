@@ -12,8 +12,8 @@ div .video {
 }
 
 h1 {
-    font-family: $font-one;
-    color: #789EC3;
+    font-family: map-get($tipos,paragrap );
+    color: $secondary;
     font-size: 3em;
     margin: auto;
 }

@@ -1,7 +1,13 @@
-@media screen and (max-width: 768px) {
+section {
+        div img {
+           @include image-box
+        }   
+}
+    @media screen and (max-width: 768px) {
     .general-se {
         display: flex;
         flex-direction: column;
+        
     }
 
 }

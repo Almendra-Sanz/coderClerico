@@ -27,13 +27,14 @@ body {
 a {
   text-decoration: none;
   color: white;
-  font-family: "PT Sans", sans-serif;
-  transition: all .3s ease-in-out; }
+  font-family: "PT Sans";
+  transition: all .3s ease-in-out;
+  font-size: 16px; }
 
 p {
   color: white;
   font-size: 1em;
-  font-family: "PT Sans", sans-serif; }
+  font-family: "PT Sans"; }
 
 a:hover {
   color: #bd768b; }
@@ -128,7 +129,7 @@ header .menu {
     color: #bd768b; }
   header .menu .menu__item:hover .sub-menu {
     display: block;
-    font-family: "PT Sans", sans-serif; }
+    font-family: "PT Sans"; }
   header .menu .menu__item .sub-menu {
     display: none;
     position: absolute;
@@ -204,8 +205,8 @@ div .video {
   margin: auto; }
 
 h1 {
-  font-family: "dillan";
-  color: #789EC3;
+  font-family: "PT Sans";
+  color: #789FC3;
   font-size: 3em;
   margin: auto; }
 
@@ -219,24 +220,60 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr; }
 
+.con {
+  padding-right: 3em;
+  color: white;
+  padding-left: 50%; }
+
+.me {
+  padding-left: 3em;
+  padding-right: 50%;
+  color: white; }
+
+.form {
+  font-family: "PT Sans"; }
+
 .te {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .te textarea {
+    border-radius: 15px;
+    padding-left: 1rem;
+    border-style: none;
+    color: gray;
+    font-family: "PT Sans"; }
 
-.con {
-  align-items: self-end;
-  margin-right: 3em;
-  color: white; }
+div .caja {
+  border-radius: 5px;
+  border-style: none;
+  padding-left: 1rem;
+  color: gray;
+  font-family: "PT Sans"; }
 
-.me {
-  margin-left: 3em;
-  align-items: self-start;
-  color: white; }
+select {
+  border-style: none;
+  color: gray; }
 
-.form {
-  font-family: "PT Sans", sans-serif; }
+button {
+  border-style: none;
+  background-color: #789FC3;
+  color: white;
+  font-family: "PT Sans";
+  border-radius: 2px; }
+
+@media screen and (max-width: 768px) {
+  .con {
+    padding-right: 3em;
+    color: white;
+    padding-left: 3%;
+    align-items: center; }
+  .me {
+    padding-left: 3em;
+    padding-right: 3%;
+    color: white;
+    align-items: center; } }
 
 @media screen and (max-width: 512px) {
   #contacto {
@@ -252,8 +289,13 @@ h1 {
     color: white; }
   .me {
     margin-left: 0;
-    font-family: "dillan";
+    font-family: "PT Sans";
     color: white; } }
+
+section div img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px; }
 
 @media screen and (max-width: 768px) {
   .general-se {
@@ -318,17 +360,68 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px; }
-
-.works {
-  background-color: beige;
-  padding: auto; }
+  grid-row-gap: 20px;
+  justify-content: space-between; }
+  .galeria .job {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; }
+    .galeria .job img {
+      height: 300px;
+      width: 300px;
+      border-radius: 10px; }
+    .galeria .job p {
+      align-items: center; }
+    .galeria .job .img-1 {
+      height: 300px;
+      width: 300px;
+      border-radius: 10px;
+      background-size: cover;
+      background-image: url("../multimedia/1.png"); }
+    .galeria .job .img-2 {
+      height: 300px;
+      width: 300px;
+      border-radius: 10px;
+      background-size: cover;
+      background-image: url("../multimedia/2.png"); }
+    .galeria .job .img-3 {
+      height: 300px;
+      width: 300px;
+      border-radius: 10px;
+      background-size: cover;
+      background-image: url("../multimedia/3.png"); }
+    .galeria .job .img-4 {
+      height: 300px;
+      width: 300px;
+      border-radius: 10px;
+      background-size: cover;
+      background-image: url("../multimedia/4.png"); }
+    .galeria .job .img-5 {
+      height: 300px;
+      width: 300px;
+      border-radius: 10px;
+      background-size: cover;
+      background-image: url("../multimedia/5.png"); }
+    .galeria .job .img-6 {
+      height: 300px;
+      width: 300px;
+      border-radius: 10px;
+      background-size: cover;
+      background-image: url("../multimedia/6.png"); }
 
 @media screen and (max-width: 992px) {
   .galeria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
     grid-row-gap: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 20px; }
+    .galeria img {
+      width: 200px;
+      height: 200px; } }

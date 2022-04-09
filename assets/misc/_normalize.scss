@@ -5,15 +5,19 @@
     box-sizing: border-box;
 }
 
+
 /* GLOBALS*/
+
 header {
     padding: 0%;
+    
 }
 
 .container {
     max-width: 1080px;
     margin: 0 auto;
 }
+
 
 body {
     display: grid;
@@ -25,14 +29,15 @@ body {
 a {
     text-decoration: none;
     color: white;
-    font-family:$font-two;
+    font-family:map-get($tipos, paragrap);
     transition: all .3s ease-in-out;
+    font-size: 16px;
 }
 
 p {
     color: white;
     font-size: 1em;
-    font-family:$font-two;
+    font-family:map-get($tipos, paragrap);
 }
 
 a:hover {
@@ -46,13 +51,13 @@ ul {
 }
 
 h2 {
-    font-family: $font-one;
+    font-family: map-get($tipos,titles);
     color: $secondary;
     font-size: 2em;
 }
 
 h3 {
-    font-family: $font-one;
+    font-family:map-get($tipos,titles);
     font-size: 3em;
     color: $secondary;
 }
