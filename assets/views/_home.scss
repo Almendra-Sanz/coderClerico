@@ -11,13 +11,20 @@ div .video {
     margin: auto;
 }
 
-h1 {
-    font-family: map-get($tipos,paragrap );
-    color: $secondary;
-    font-size: 3em;
-    margin: auto;
+#pepe{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    font-size: 1em;
+    text-align: center;
+    align-items: center;
 }
 
+.about-us {
+    padding:10px 20px;
+}
+
+   
 
 @media screen and (max-width: 768px) {
  .present {

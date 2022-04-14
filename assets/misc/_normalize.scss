@@ -28,20 +28,20 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color:$linkcol;
     font-family:map-get($tipos, paragrap);
     transition: all .3s ease-in-out;
     font-size: 16px;
 }
 
 p {
-    color: white;
+    color:$linkcol;
     font-size: 1em;
     font-family:map-get($tipos, paragrap);
 }
 
 a:hover {
-    color:$principaltwo;
+    color:$secondary;
 }
 
 
@@ -54,12 +54,26 @@ h2 {
     font-family: map-get($tipos,titles);
     color: $secondary;
     font-size: 2em;
+    letter-spacing: 1px;
+    margin-bottom: 0%;
 }
 
 h3 {
     font-family:map-get($tipos,titles);
     font-size: 3em;
     color: $secondary;
+    letter-spacing: 1px;
+
+}
+
+ 
+button {
+    border-style: none;
+    background-color: $secondary;
+    color: gray;
+    font-family: map-get($tipos,paragrap );
+    border-radius: 2px;
+
 }
 
 @media screen and (max-width: 992px) {

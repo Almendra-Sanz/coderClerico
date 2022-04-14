@@ -52,15 +52,7 @@ select {
     border-style: none ;
     color: gray;
 }
- 
-button {
-    border-style: none;
-    background-color: $secondary;
-    color: white;
-    font-family: map-get($tipos,paragrap );
-    border-radius: 2px;
 
-}
 
 @media screen and (max-width: 768px){
 
