@@ -10,7 +10,7 @@
 
 header {
     padding: 0%;
-    
+
 }
 
 .container {
@@ -28,20 +28,20 @@ body {
 
 a {
     text-decoration: none;
-    color:$linkcol;
-    font-family:map-get($tipos, paragrap);
+    color: $linkcol;
+    font-family: map-get($tipos, paragrap);
     transition: all .3s ease-in-out;
     font-size: 16px;
 }
 
 p {
-    color:$linkcol;
+    color: $linkcol;
     font-size: 1em;
-    font-family:map-get($tipos, paragrap);
+    font-family: map-get($tipos, paragrap);
 }
 
 a:hover {
-    color:$secondary;
+    color: $secondary;
 }
 
 
@@ -51,7 +51,7 @@ ul {
 }
 
 h2 {
-    font-family: map-get($tipos,titles);
+    font-family: map-get($tipos, titles);
     color: $secondary;
     font-size: 2em;
     letter-spacing: 1px;
@@ -59,32 +59,76 @@ h2 {
 }
 
 h3 {
-    font-family:map-get($tipos,titles);
+    font-family: map-get($tipos, titles);
     font-size: 3em;
     color: $secondary;
     letter-spacing: 1px;
 
 }
 
- 
+
 button {
     border-style: none;
     background-color: $secondary;
     color: gray;
-    font-family: map-get($tipos,paragrap );
+    font-family: map-get($tipos, paragrap);
     border-radius: 2px;
 
 }
 
-@media screen and (max-width: 992px) {
+
+
+@media screen and (max-width: 768px) {
+
+    a {
+        font-size: 5pw;
+    }
+
     p {
-        font-size: 14px;
+        color: $linkcol;
+        font-size: 3vw;
+        font-family: map-get($tipos, paragrap);
+    }
+
+    h2 {
+        font-family: map-get($tipos, titles);
+        color: $secondary;
+        font-size: 4vw;
+        letter-spacing: 1px;
+        margin-bottom: 0%;
+    }
+
+    h3 {
+        font-family: map-get($tipos, titles);
+        font-size: 4vw;
+        color: $secondary;
+        letter-spacing: 1px;
+
     }
 }
 
-@media screen and (max-width: 768px) {
-    p {
-        font-size: 12, 5px;
+@media screen and (max-width: 540px) {
+    a {
+        font-size: 3vw;
     }
+
+}
+
+
+@media screen and (max-width: 390px) {
+    a {
+        font-size: 3vw;
+    }
+
+    h2 {
+        font: size 3vw;
+        ;
+    }
+
+    h3 {
+        font: size 3vw;
+        ;
+    }
+
 
 }

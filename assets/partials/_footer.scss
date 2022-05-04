@@ -23,7 +23,6 @@ footer {
 .fot-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding-left:5% ;
 }
 
@@ -38,24 +37,63 @@ footer {
     align-items:center;
     justify-content: center;
     padding-right:5% ;
-    /* no entiendo porque no funciona, por eso lo solucione con un margin pero no es lo mismo  */
 }
 
 .contact-list__item {
     margin-right: 1em;
 }
 
+
+
 @media screen and (max-width: 768px) {
-    footer {
-        padding: 2em 0;
-    }
-
-    .fot {
-        display: flex;
-        flex-direction: row;
-    }
-
     .fot-contact__list {
         margin-right: 0%;
     }
 }
+
+@media screen and (max-width: 540px) {
+   
+
+    .fot-contact__list {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: right;
+        margin-right: 0%;
+    }
+
+    .contact-list__item {
+        margin-right: 0;
+    }
+    
+    .red-list__item {
+        margin-right: 2%;
+        justify-content: left;
+        align-items: flex-start;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+    .fot-contact__list {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+        margin-right: 0%;
+    }
+    .contact-list__item {
+    align-items: center;  
+    justify-content: center;  }
+   
+    .red-list__item {
+        margin-right: 0%;
+        justify-content: left;
+        align-items: flex-start;
+    } 
+    
+
+}
+
+
+

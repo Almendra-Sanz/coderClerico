@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
- 
+
 .con {
     padding-right: 3em;
     color: $linkcol;
@@ -13,48 +13,48 @@
 .me {
     padding-left: 3em;
     padding-right: 50%;
-     color: $linkcol;
-    
+    color: $linkcol;
+
 }
 
 .form {
-    font-family:map-get($tipos, paragrap);
-    
+    font-family: map-get($tipos, paragrap);
+
 
 }
 
-.te { 
+.te {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    textarea{
+    textarea {
         border-radius: 15px;
         padding-left: 1rem;
-        border-style:none;
+        border-style: none;
         color: gray;
-        font-family: map-get($tipos,paragrap );
-}
+        font-family: map-get($tipos, paragrap);
+    }
 
 }
 
 div .caja {
     border-radius: 5px;
-    border-style:none;
+    border-style: none;
     padding-left: 1rem;
     color: gray;
-    font-family: map-get($tipos,paragrap );
+    font-family: map-get($tipos, paragrap);
 
 }
 
 select {
-    border-style: none ;
+    border-style: none;
     color: gray;
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
     .con {
         padding-right: 3em;
@@ -62,17 +62,17 @@ select {
         padding-left: 3%;
         align-items: center;
     }
-    
+
     .me {
         padding-left: 3em;
         padding-right: 3%;
-         color: $linkcol;
-         align-items: center;
-        
+        color: $linkcol;
+        align-items: center;
+
     }
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 540px) {
     #contacto {
         display: grid;
         grid-template-columns: 1fr;
@@ -92,9 +92,8 @@ select {
 
     .me {
         margin-left: 0;
-        font-family: map-get($tipos, paragrap );
+        font-family: map-get($tipos, paragrap);
         color: $linkcol;
     }
 
 }
-

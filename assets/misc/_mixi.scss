@@ -1,11 +1,15 @@
 // MIXINS
 
-@mixin image-box ($hei:300px, $wid:300px, $radio: 10px) {
+@mixin image-box ($hei:100%, $wid:auto, $radio: 10px) {
     height: $hei;
     width: $wid;
     border-radius: $radio;
 }
-    
+
+@mixin change-box ($hei:200px, $wid:200px) {
+    height: $hei;
+    width: $wid;
+}
 
 // HELPERS 
 
@@ -24,23 +28,3 @@
 }
 
 
-/* MEDIA QUERIES */
-@media screen and (max-width: 992px) {
-    header {
-        font-size: 14px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    
-
-    p {
-        font-size: 12, 5px;
-    }
-
-}
