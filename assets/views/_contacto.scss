@@ -5,14 +5,13 @@
 
 
 .con {
-    padding-right: 3em;
+    margin-left: 30%;
     color: $linkcol;
-    padding-left: 50%;
+   
 }
 
 .me {
-    padding-left: 3em;
-    padding-right: 50%;
+    margin-right: 30%;
     color: $linkcol;
 
 }
@@ -57,15 +56,13 @@ select {
 @media screen and (max-width: 768px) {
 
     .con {
-        padding-right: 3em;
+        margin-left: 0%;
         color: $linkcol;
-        padding-left: 3%;
         align-items: center;
     }
 
     .me {
-        padding-left: 3em;
-        padding-right: 3%;
+        margin-right: 0%;
         color: $linkcol;
         align-items: center;
 
